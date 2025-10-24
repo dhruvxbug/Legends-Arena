@@ -62,7 +62,7 @@ const Footer = () => {
           transform: "translateY(6%)",
           whiteSpace: "nowrap",
           textAlign: "center",
-          fontFamily: "heronew, Zentry, serif",
+          fontFamily: "heronew, LegendsArena, serif",
           overflow: "hidden",
         }}
       >
