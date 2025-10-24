@@ -69,7 +69,7 @@ export const BentoCard = ({ src, title, description, isComingSoon }) => {
         <div>
           <h1 className="bento-title special-font">{title}</h1>
           {description && (
-            <p className="mt-3 max-w-64 text-xs md:text-base">{description}</p>
+            <p className="mt-3 max-w-64 text-xs md:text-base font-general">{description}</p>
           )}
         </div>
 
@@ -102,10 +102,10 @@ const Features = () => (
   <section className="bg-black pb-52">
     <div className="container mx-auto px-3 md:px-10">
       <div className="px-5 py-32">
-        <p className="font-[heronew] text-2xl md:text-3xl text-blue-50">
+        <p className="font-heronew text-2xl md:text-3xl text-blue-50">
           Enter the Arena — Forge Your Legend
         </p>
-        <p className="max-w-md font-[heronew] text-xl md:text-xl text-blue-50 opacity-50">
+        <p className="max-w-md text-xl md:text-xl text-blue-50 opacity-50 font-general">
           Command champions across dynamic arenas. Recruit, upgrade, and
           customize heroes, join guild campaigns, and compete in seasonal
           tournaments to earn rewards that persist across the Legends-Arena
@@ -113,12 +113,12 @@ const Features = () => (
         </p>
       </div>
 
-      <BentoTilt className="border-hsla relative mb-7 h-96 w-full overflow-hidden font-[heronew] rounded-md md:h-[65vh]">
+      <BentoTilt className="border-hsla relative mb-7 h-96 w-full overflow-hidden rounded-md md:h-[65vh]">
         <BentoCard
           src="https://7x8dq6l6vi.ufs.sh/f/UDe9UzBAkSRdg317rSh2vebLqH6kcMznD0gB1u53FJUjY9NW"
           title={
             <>
-              <h2 className="text-2xl md:text-4xl">radiant</h2>
+              <h2 className="text-2xl md:text-4xl font-heronew">Arena Client</h2>
             </>
           }
           description="A live cross-platform client where you recruit and level champions, enter ranked matches, and earn tactical rewards tied to player progression."
@@ -126,13 +126,13 @@ const Features = () => (
         />
       </BentoTilt>
 
-      <div className="grid h-[135vh] font-[heronew] w-full grid-cols-2 grid-rows-3 gap-7">
+      <div className="grid h-[135vh] w-full grid-cols-2 grid-rows-3 gap-7">
         <BentoTilt className="bento-tilt_1 row-span-1 md:col-span-1 md:row-span-2">
           <BentoCard
             src="https://7x8dq6l6vi.ufs.sh/f/UDe9UzBAkSRdZOKHsNLHRKNe9s16ixmrygwlp0V5ZhCvzEaT"
             title={
               <>
-                <h2 className="text-xl md:text-2xl">zigma</h2>
+                <h2 className="text-xl md:text-2xl font-heronew">Hero Forge</h2>
               </>
             }
             description="A limited hero collection — mint, trade, and customize legendary characters with unique abilities and on-chain provenance."
@@ -140,12 +140,12 @@ const Features = () => (
           />
         </BentoTilt>
 
-        <BentoTilt className="bento-tilt_1 font-[heronew] row-span-1 ms-32 md:col-span-1 md:ms-0">
+        <BentoTilt className="bento-tilt_1 row-span-1 ms-32 md:col-span-1 md:ms-0">
           <BentoCard
             src="https://7x8dq6l6vi.ufs.sh/f/UDe9UzBAkSRd4IKk6ZrN9nUHjRcyMfbTamVJeSdrIvzOkLpW"
             title={
               <>
-                <h2 className="text-xl md:text-2xl">nexus</h2>
+                <h2 className="text-xl md:text-2xl font-heronew">Guild Nexus</h2>
               </>
             }
             description="A social hub and matchmaker — find teammates, organize raids, and manage guilds and alliances for coordinated campaigns."
@@ -153,12 +153,12 @@ const Features = () => (
           />
         </BentoTilt>
 
-        <BentoTilt className="bento-tilt_1 font-[heronew] me-14 md:col-span-1 md:me-0">
+        <BentoTilt className="bento-tilt_1 me-14 md:col-span-1 md:me-0">
           <BentoCard
             src="https://7x8dq6l6vi.ufs.sh/f/UDe9UzBAkSRdxRfl5BClU75EsKFrZGDJ30vuYA2fXpw1jT8M"
             title={
               <>
-                <h2 className="text-xl md:text-2xl">azul</h2>
+                <h2 className="text-xl md:text-2xl font-heronew">Azul (AI)</h2>
               </>
             }
             description="An adaptive AI companion that scouts opponents, suggests builds, and automates routine tasks so you can focus on strategy and play."
@@ -168,8 +168,8 @@ const Features = () => (
 
         <BentoTilt className="bento-tilt_2">
           <div className="flex size-full flex-col justify-between bg-indigo-700 p-5">
-            <h1 className="bento-title special-font max-w-64 text-black">
-              Live events & seasonal campaigns
+            <h1 className="bento-title special-font max-w-64 text-black font-heronew">
+              Live Events & Seasonal Campaigns
             </h1>
 
             <TiLocationArrow className="m-5 scale-[5] self-end" />
