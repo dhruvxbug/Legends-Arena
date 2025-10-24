@@ -61,15 +61,17 @@ const FloatingImage = () => {
           <div className="story-img-container">
             <div className="story-img-mask">
               <div className="story-img-content">
-                <img
+                <video
                   ref={frameRef}
                   onMouseMove={handleMouseMove}
                   onMouseLeave={handleMouseLeave}
                   onMouseUp={handleMouseLeave}
                   onMouseEnter={handleMouseLeave}
-                  src="/img/entrance.webp"
-                  alt="entrance.webp"
+                  src="https://7x8dq6l6vi.ufs.sh/f/UDe9UzBAkSRdqBIoDAGIcl1SWYX4mh8oLAkPtnT6EUd5pay3"
                   className="object-contain"
+                  loop
+                  muted
+                  autoPlay
                 />
               </div>
             </div>
