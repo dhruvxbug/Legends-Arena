@@ -65,21 +65,29 @@ const Roadmap = () => {
         src="https://7x8dq6l6vi.ufs.sh/f/UDe9UzBAkSRdadDjrX7JdeKXxnoGrWElzvOugYU8w41D07Q9"
         className="absolute inset-0 z-0 w-full h-full object-cover pointer-events-none"
       />
+      
+      {/* Background effects - lime theme */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black via-stone-900/20 to-black pointer-events-none" />
+      <div className="absolute top-1/4 -left-20 w-96 h-96 bg-lime-900/10 rounded-full blur-3xl" />
+      <div className="absolute bottom-1/4 -right-20 w-96 h-96 bg-yellow-900/10 rounded-full blur-3xl" />
 
       <div className="container mx-auto px-4 md:px-10 relative z-10">
         {/* Header */}
         <div className="text-center mb-16">
+          <h2 className="text-5xl md:text-7xl font-heronew mb-6 bg-gradient-to-r from-lime-200 via-yellow-400 to-lime-200 bg-clip-text text-transparent">
+            Roadmap
+          </h2>
           <div className="flex items-center justify-center gap-4 mt-6">
-            <div className="h-0.5 w-16 bg-gradient-to-r from-transparent via-amber-600 to-amber-600" />
-            <div className="text-amber-500 text-2xl">⚔</div>
-            <div className="h-0.5 w-16 bg-gradient-to-l from-transparent via-amber-600 to-amber-600" />
+            <div className="h-0.5 w-16 bg-gradient-to-r from-transparent via-lime-500 to-lime-500" />
+            <div className="text-lime-400 text-2xl">⚔</div>
+            <div className="h-0.5 w-16 bg-gradient-to-l from-transparent via-lime-500 to-lime-500" />
           </div>
         </div>
 
         {/* Timeline Container */}
         <div className="relative">
-          {/* Horizontal timeline line - weathered gold */}
-          <div className="absolute top-[120px] left-0 right-0 h-1 bg-gradient-to-r from-amber-900/30 via-amber-600/60 to-amber-900/30 shadow-[0_0_10px_rgba(217,119,6,0.3)]" />
+          {/* Horizontal timeline line - lime/yellow theme */}
+          <div className="absolute top-[120px] left-0 right-0 h-1 bg-gradient-to-r from-lime-900/30 via-lime-500/60 to-lime-900/30 shadow-[0_0_10px_rgba(163,230,53,0.3)]" />
 
           {/* Timeline Grid */}
           <div className="grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-2 relative">
@@ -88,10 +96,10 @@ const Roadmap = () => {
                 {/* Period Label */}
                 <div className="text-center mb-8">
                   <div className="relative inline-block">
-                    {/* Timeline dot - ancient stone */}
-                    <div className="absolute top-[52px] left-1/2 transform -translate-x-1/2 w-5 h-5 rounded-full bg-amber-600 border-4 border-black z-20 shadow-[0_0_15px_rgba(217,119,6,0.5)]" />
+                    {/* Timeline dot - lime theme */}
+                    <div className="absolute top-[52px] left-1/2 transform -translate-x-1/2 w-5 h-5 rounded-full bg-lime-500 border-4 border-black z-20 shadow-[0_0_15px_rgba(163,230,53,0.5)]" />
                     
-                    <h3 className="font-heronew text-xl md:text-2xl text-amber-200/90 mb-2 relative z-10 drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
+                    <h3 className="font-heronew text-xl md:text-2xl text-lime-200/90 mb-2 relative z-10 drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
                       {period.period}
                     </h3>
                   </div>
@@ -108,14 +116,14 @@ const Roadmap = () => {
                         shadow-[inset_0_1px_0_rgba(255,255,255,0.1)]
                         ${
                           update.highlight
-                            ? "bg-gradient-to-br from-amber-950/80 via-orange-950/70 to-amber-950/80 border-amber-700/80 shadow-[0_0_30px_rgba(217,119,6,0.3)]"
+                            ? "bg-gradient-to-br from-lime-950/80 via-green-950/70 to-lime-950/80 border-lime-700/80 shadow-[0_0_30px_rgba(163,230,53,0.3)]"
                             : "bg-gradient-to-br from-stone-900/70 via-stone-800/60 to-stone-900/70 border-stone-600/60"
                         }
                       `}
                     >
                       {/* Update Title */}
                       <h4 className={`font-heronew text-lg md:text-xl mb-3 drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)] ${
-                        update.highlight ? 'text-amber-300' : 'text-stone-100'
+                        update.highlight ? 'text-lime-300' : 'text-stone-100'
                       }`}>
                         {update.title}
                       </h4>
@@ -127,7 +135,7 @@ const Roadmap = () => {
                             key={featureIndex}
                             className="font-legends text-sm text-stone-200/90 flex items-start"
                           >
-                            <span className="text-amber-600 mr-2">•</span>
+                            <span className="text-lime-500 mr-2">•</span>
                             <span>{feature}</span>
                           </li>
                         ))}
