@@ -41,6 +41,7 @@ export const BentoTilt = ({ children, className = "" }) => {
 export const BentoCard = ({ src, title, description, isComingSoon }) => {
   const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
   const [hoverOpacity, setHoverOpacity] = useState(0);
+  const [isHovering, setIsHovering] = useState(false);
   const hoverButtonRef = useRef(null);
 
   const handleMouseMove = (event) => {
@@ -53,20 +54,33 @@ export const BentoCard = ({ src, title, description, isComingSoon }) => {
     });
   };
 
-  const handleMouseEnter = () => setHoverOpacity(1);
-  const handleMouseLeave = () => setHoverOpacity(0);
+  const handleMouseEnter = () => {
+    setHoverOpacity(1);
+    setIsHovering(true);
+  };
+  
+  const handleMouseLeave = () => {
+    setHoverOpacity(0);
+    setIsHovering(false);
+  };
 
   return (
-    <div className="relative text-black size-full">
+    <div 
+      className="relative text-black size-full group"
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+    >
       <img
         src={src}
         className="absolute left-0 top-0 size-full object-cover object-center"
       />
-      <div className="relative z-10 flex size-full flex-col justify-between p-5 text-lime-700">
+      
+      {/* Green overlay with text - shown on hover */}
+      <div className={`absolute inset-0 bg-lime-700/95 transition-opacity duration-300 z-10 flex flex-col justify-between p-5 ${isHovering ? 'opacity-100' : 'opacity-0'}`}>
         <div>
-          <h1 className="bento-title special-font">{title}</h1>
+          <h1 className="bento-title special-font text-black">{title}</h1>
           {description && (
-            <p className="mt-3 max-w-64 text-xs md:text-base font-general">{description}</p>
+            <p className="mt-3 max-w-64 text-xs md:text-base font-general text-black">{description}</p>
           )}
         </div>
 
@@ -74,8 +88,6 @@ export const BentoCard = ({ src, title, description, isComingSoon }) => {
           <div
             ref={hoverButtonRef}
             onMouseMove={handleMouseMove}
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
             className="border-hsla relative flex w-fit cursor-pointer items-center gap-1 overflow-hidden rounded-full bg-black px-5 py-2 text-xs uppercase text-white/20"
           >
             {/* Radial gradient hover effect */}
