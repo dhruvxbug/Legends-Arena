@@ -130,7 +130,7 @@ const Features = () => (
 
         <BentoTilt className="bento-tilt_1 row-span-1 ms-32 md:col-span-1 md:ms-0">
           <BentoCard
-            src="https://7x8dq6l6vi.ufs.sh/f/UDe9UzBAkSRd4IKk6ZrN9nUHjRcyMfbTamVJeSdrIvzOkLpW"
+            src="https://7x8dq6l6vi.ufs.sh/f/UDe9UzBAkSRdadDjrX7JdeKXxnoGrWElzvOugYU8w41D07Q9"
             title={
               <>
                 <h2 className="text-xl md:text-2xl font-heronew">Guild Nexus</h2>
@@ -166,7 +166,7 @@ const Features = () => (
 
         <BentoTilt className="bento-tilt_2">
           <video
-            src="https://7x8dq6l6vi.ufs.sh/f/UDe9UzBAkSRdogehKjdxocqsFzLAmRE270inyMDTuVrW541v"
+            src="https://7x8dq6l6vi.ufs.sh/f/UDe9UzBAkSRdu4jssGUpJ6hqDBSk5z8lwdW9y2rA4fcUtGoL"
             loop
             muted
             autoPlay

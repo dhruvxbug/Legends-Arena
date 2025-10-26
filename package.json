@@ -1,5 +1,6 @@
 {
-  "name": "awwwards-website",
+  "name": "legends-arena",
+  "description": "Legends Arena Landing Page",
   "private": true,
   "version": "0.0.0",
   "type": "module",
