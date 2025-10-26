@@ -57,12 +57,12 @@ export const BentoCard = ({ src, title, description, isComingSoon }) => {
   const handleMouseLeave = () => setHoverOpacity(0);
 
   return (
-    <div className="relative size-full">
+    <div className="relative text-black size-full">
       <img
         src={src}
         className="absolute left-0 top-0 size-full object-cover object-center"
       />
-      <div className="relative z-10 flex size-full flex-col justify-between p-5 text-blue-50">
+      <div className="relative z-10 flex size-full flex-col justify-between p-5 text-black">
         <div>
           <h1 className="bento-title special-font">{title}</h1>
           {description && (
@@ -113,10 +113,10 @@ const Features = () => (
       <div className="grid h-[135vh] w-full grid-cols-2 grid-rows-3 gap-7">
         <BentoTilt className="bento-tilt_1 row-span-1 md:col-span-1 md:row-span-2">
           <BentoCard
-            src="https://7x8dq6l6vi.ufs.sh/f/UDe9UzBAkSRdjPm0aApwRAE7m5kh9pBrOxX0qclWQ8TKUyMe"
+            src="https://7x8dq6l6vi.ufs.sh/f/UDe9UzBAkSRdOM0Sv0giW3XVksA82oQGaDRrb6hv7ftxJFKp"
             title={
               <>
-                <h2 className="text-xl md:text-2xl font-heronew">Relic Vault</h2>
+                <h2 className="text-xl text-black md:text-2xl font-heronew">Relic Vault</h2>
               </>
             }
             description="Discover a vast collection of ancient relics — each tied to the elements. Seek, collect, and equip the relic that best amplifies your legend's strength."
@@ -126,7 +126,7 @@ const Features = () => (
 
         <BentoTilt className="bento-tilt_1 row-span-1 ms-32 md:col-span-1 md:ms-0">
           <BentoCard
-            src="https://7x8dq6l6vi.ufs.sh/f/UDe9UzBAkSRdadDjrX7JdeKXxnoGrWElzvOugYU8w41D07Q9"
+            src="https://7x8dq6l6vi.ufs.sh/f/UDe9UzBAkSRdxxiUbTClU75EsKFrZGDJ30vuYA2fXpw1jT8M"
             title={
               <>
                 <h2 className="text-xl md:text-2xl font-heronew">Elemental Affinity</h2>
@@ -139,7 +139,7 @@ const Features = () => (
 
         <BentoTilt className="bento-tilt_1 me-14 md:col-span-1 md:me-0">
           <BentoCard
-            src="https://7x8dq6l6vi.ufs.sh/f/UDe9UzBAkSRd74q5zHNVDh5vXRIjcr8NQOk46lmqzSsb3YU0"
+            src="https://7x8dq6l6vi.ufs.sh/f/UDe9UzBAkSRdwPhNRV5OpgfdKRP0IjcAEUtQlkGe64NH2JiC"
             title={
               <>
                 <h2 className="text-xl md:text-2xl font-heronew">Battle Oracle</h2>
@@ -161,11 +161,8 @@ const Features = () => (
         </BentoTilt>
 
         <BentoTilt className="bento-tilt_2">
-          <video
-            src="https://7x8dq6l6vi.ufs.sh/f/UDe9UzBAkSRdu4jssGUpJ6hqDBSk5z8lwdW9y2rA4fcUtGoL"
-            loop
-            muted
-            autoPlay
+          <img
+            src="https://7x8dq6l6vi.ufs.sh/f/UDe9UzBAkSRdazVeNOT7JdeKXxnoGrWElzvOugYU8w41D07Q"
             className="size-full object-cover object-center"
           />
         </BentoTilt>
