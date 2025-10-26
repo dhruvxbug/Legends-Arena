@@ -113,23 +113,11 @@ const Features = () => (
         </p>
       </div>
 
-      <BentoTilt className="border-hsla relative mb-7 h-96 w-full overflow-hidden rounded-md md:h-[65vh]">
-        <BentoCard
-          src="https://7x8dq6l6vi.ufs.sh/f/UDe9UzBAkSRdg317rSh2vebLqH6kcMznD0gB1u53FJUjY9NW"
-          title={
-            <>
-              <h2 className="text-2xl md:text-4xl font-heronew">Arena Client</h2>
-            </>
-          }
-          description="A live cross-platform client where you recruit and level champions, enter ranked matches, and earn tactical rewards tied to player progression."
-          isComingSoon
-        />
-      </BentoTilt>
 
       <div className="grid h-[135vh] w-full grid-cols-2 grid-rows-3 gap-7">
         <BentoTilt className="bento-tilt_1 row-span-1 md:col-span-1 md:row-span-2">
           <BentoCard
-            src="https://7x8dq6l6vi.ufs.sh/f/UDe9UzBAkSRdZOKHsNLHRKNe9s16ixmrygwlp0V5ZhCvzEaT"
+            src="https://7x8dq6l6vi.ufs.sh/f/UDe9UzBAkSRdjPm0aApwRAE7m5kh9pBrOxX0qclWQ8TKUyMe"
             title={
               <>
                 <h2 className="text-xl md:text-2xl font-heronew">Hero Forge</h2>

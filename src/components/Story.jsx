@@ -1,5 +1,6 @@
 import gsap from "gsap";
 import { useRef } from "react";
+import Roadmap from "./Roadmap";
 
 import Button from "./Button";
 import AnimatedTitle from "./AnimatedTitle";
@@ -46,13 +47,13 @@ const FloatingImage = () => {
   };
 
   return (
-    <div id="story" className="min-h-dvh w-screen bg-black text-blue-50">
-      <div className="flex size-full flex-col items-center py-10 pb-24">
+    <div id="story" className="max-h-200px w-screen bg-black text-blue-50">
+      <div className="flex  flex-col items-center py-10 ">
         <p className="font-general text-sm uppercase md:text-[10px]">
           the multiversal ip world
         </p>
 
-        <div className="relative size-full">
+        <div className="relative ">
           <AnimatedTitle
             title="the st<b>o</b>ry of <br /> a hidden real<b>m</b>"
             containerClass="mt-5 pointer-events-none mix-blend-difference relative z-10"
@@ -61,17 +62,14 @@ const FloatingImage = () => {
           <div className="story-img-container">
             <div className="story-img-mask">
               <div className="story-img-content">
-                <video
+                <img
                   ref={frameRef}
                   onMouseMove={handleMouseMove}
                   onMouseLeave={handleMouseLeave}
                   onMouseUp={handleMouseLeave}
                   onMouseEnter={handleMouseLeave}
-                  src="https://7x8dq6l6vi.ufs.sh/f/UDe9UzBAkSRdqBIoDAGIcl1SWYX4mh8oLAkPtnT6EUd5pay3"
+                  src=""
                   className="object-contain"
-                  loop
-                  muted
-                  autoPlay
                 />
               </div>
             </div>
@@ -102,23 +100,10 @@ const FloatingImage = () => {
                 </filter>
               </defs>
             </svg>
-          </div>
-        </div>
 
-        <div className="-mt-80 flex w-full justify-center md:-mt-64 md:me-44 md:justify-end">
-          <div className="flex h-full w-fit flex-col items-center md:items-start">
-            <p className="mt-3 max-w-sm text-center font-circular-web text-violet-50 md:text-start">
-              Where realms converge, lies Legends Arena and the boundless
-              pillar. Discover its secrets and shape your fate amidst
-              infinite opportunities.
-            </p>
-
-            <Button
-              id="realm-btn"
-              title="discover prologue"
-              containerClass="mt-5"
-            />
+          <Roadmap/>
           </div>
+
         </div>
       </div>
     </div>

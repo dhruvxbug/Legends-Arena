@@ -50,13 +50,9 @@ const About = () => {
 
       <div className="h-dvh w-screen" id="clip">
         <div className="mask-clip-path about-image">
-          <video
-            src="https://7x8dq6l6vi.ufs.sh/f/UDe9UzBAkSRdTsItGhPwf1DmqLi9FKWeArRS27u8Ocg6UQjP"
+          <img
+            src="https://7x8dq6l6vi.ufs.sh/f/UDe9UzBAkSRdoTFJ7bHdxocqsFzLAmRE270inyMDTuVrW541"
             className="absolute left-0 top-0 size-full object-cover"
-            loop
-            muted
-            autoPlay
-            playsInline
             aria-label="About background video"
           />
         </div>
