@@ -39,7 +39,7 @@ body {
 
   @font-face {
     font-family: "heronew";
-    src: url("/fonts/CinzelDecorative-Bold.ttf") format("truetype");
+    src: url("/fonts/MedievalSharp-Regular.ttf") format("truetype");
     font-weight: 700;
     font-style: normal;
     font-display: swap;
@@ -95,7 +95,7 @@ body {
 
   .animated-word {
     @apply opacity-0;
-  /* Use heronew (Cinzel Decorative Bold) for animated title words */
+  /* Use heronew (MedievalSharp) for animated title words */
   font-family: "heronew", "LegendsArena", serif;
     font-weight: 700;
     transform: translate3d(10px, 51px, -60px) rotateY(60deg) rotateX(-40deg);

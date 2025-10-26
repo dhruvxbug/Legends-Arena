@@ -58,11 +58,8 @@ export const BentoCard = ({ src, title, description, isComingSoon }) => {
 
   return (
     <div className="relative size-full">
-      <video
+      <img
         src={src}
-        loop
-        muted
-        autoPlay
         className="absolute left-0 top-0 size-full object-cover object-center"
       />
       <div className="relative z-10 flex size-full flex-col justify-between p-5 text-blue-50">
@@ -103,13 +100,12 @@ const Features = () => (
     <div className="container mx-auto px-3 md:px-10">
       <div className="px-5 py-32">
         <p className="font-heronew text-2xl md:text-3xl text-blue-50">
-          Enter the Arena — Forge Your Legend
+          Discover the Arsenal
         </p>
         <p className="max-w-md text-xl md:text-xl text-blue-50 opacity-50 font-general">
-          Command champions across dynamic arenas. Recruit, upgrade, and
-          customize heroes, join guild campaigns, and compete in seasonal
-          tournaments to earn rewards that persist across the Legends-Arena
-          universe.
+          Step into the realm where stories are not told… they're forged into
+          legends. Seek ancient relics, command elemental powers, and forge your
+          path to glory.
         </p>
       </div>
 
@@ -120,10 +116,10 @@ const Features = () => (
             src="https://7x8dq6l6vi.ufs.sh/f/UDe9UzBAkSRdjPm0aApwRAE7m5kh9pBrOxX0qclWQ8TKUyMe"
             title={
               <>
-                <h2 className="text-xl md:text-2xl font-heronew">Hero Forge</h2>
+                <h2 className="text-xl md:text-2xl font-heronew">Relic Vault</h2>
               </>
             }
-            description="A limited hero collection — mint, trade, and customize legendary characters with unique abilities and on-chain provenance."
+            description="Discover a vast collection of ancient relics — each tied to the elements. Seek, collect, and equip the relic that best amplifies your legend's strength."
             isComingSoon
           />
         </BentoTilt>
@@ -133,10 +129,10 @@ const Features = () => (
             src="https://7x8dq6l6vi.ufs.sh/f/UDe9UzBAkSRdadDjrX7JdeKXxnoGrWElzvOugYU8w41D07Q9"
             title={
               <>
-                <h2 className="text-xl md:text-2xl font-heronew">Guild Nexus</h2>
+                <h2 className="text-xl md:text-2xl font-heronew">Elemental Affinity</h2>
               </>
             }
-            description="A social hub and matchmaker — find teammates, organize raids, and manage guilds and alliances for coordinated campaigns."
+            description="Every element holds a unique power. Choose your alignment wisely — the right match can mean victory against even the mightiest foe."
             isComingSoon
           />
         </BentoTilt>
@@ -146,10 +142,10 @@ const Features = () => (
             src="https://7x8dq6l6vi.ufs.sh/f/UDe9UzBAkSRd74q5zHNVDh5vXRIjcr8NQOk46lmqzSsb3YU0"
             title={
               <>
-                <h2 className="text-xl md:text-2xl font-heronew">Azul (AI)</h2>
+                <h2 className="text-xl md:text-2xl font-heronew">Battle Oracle</h2>
               </>
             }
-            description="An adaptive AI companion that scouts opponents, suggests builds, and automates routine tasks so you can focus on strategy and play."
+            description="An ancient guide forged in wisdom — reveals opponent weaknesses, suggests strategic builds, and whispers secrets of victory before each clash."
             isComingSoon
           />
         </BentoTilt>
@@ -157,7 +153,7 @@ const Features = () => (
         <BentoTilt className="bento-tilt_2">
           <div className="flex size-full flex-col justify-between bg-indigo-700 p-5">
             <h1 className="bento-title special-font max-w-64 text-black font-heronew">
-              Live Events & Seasonal Campaigns
+              Epic Trials & Seasonal Conquests
             </h1>
 
             <TiLocationArrow className="m-5 scale-[5] self-end" />

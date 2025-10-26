@@ -50,12 +50,12 @@ const FloatingImage = () => {
     <div id="story" className="max-h-200px w-screen bg-black text-blue-50">
       <div className="flex  flex-col items-center py-10 ">
         <p className="font-general text-sm uppercase md:text-[10px]">
-          the multiversal ip world
+          Beyond the veil
         </p>
 
         <div className="relative ">
           <AnimatedTitle
-            title="the st<b>o</b>ry of <br /> a hidden real<b>m</b>"
+            title="Tales of the <br /> Fallen Kin<b>g</b>doms"
             containerClass="mt-5 pointer-events-none mix-blend-difference relative z-10"
           />
 

@@ -30,20 +30,20 @@ const About = () => {
     <div id="about" className="min-h-screen w-screen">
       <div className="relative mb-8 mt-36 flex flex-col items-center gap-5">
         <p className="font-general text-sm uppercase md:text-[10px]">
-          Welcome to the new world of Armoury Games
+          Step into the realm
         </p>
 
         <AnimatedTitle
-          title="Discover New <br /> Characters"
+          title="Where Legends <br /> Are Forged"
           containerClass="mt-5 !text-black text-center "
         />
 
         <div className="about-subtext">
-          <p>The Game of Games begins—your life, now an epic MMORPG</p>
+          <p>Every champion carries a story untold—yours begins now</p>
           <p className="text-gray-500">
-            Legends Arena unites players from countless games and platforms,
-            digital and physical, into a unified Play Economy—where progress,
-            rewards, and reputation travel with you.
+            Legends Arena unites warriors across realms—where your deeds echo
+            through time, your victories shape the world, and your legacy
+            transcends the battlefield.
           </p>
         </div>
       </div>

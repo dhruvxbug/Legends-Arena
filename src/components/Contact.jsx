@@ -35,15 +35,15 @@ const Contact = () => {
 
         <div className="flex flex-col items-center text-center">
           <p className="mb-10 font-general text-[10px] uppercase">
-            Join Legends Arena
+            Answer the call
           </p>
 
           <AnimatedTitle
-            title="Lets Build Together!"
+            title="Join the Legend!"
             className="special-font !md:text-[6.2rem] w-full font-legends !text-5xl !font-black !leading-[.9]"
           />
 
-          <Button title="contact us" containerClass="mt-10 cursor-pointer" />
+          <Button title="Begin your journey" containerClass="mt-10 cursor-pointer" />
         </div>
       </div>
     </div>

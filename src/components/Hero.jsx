@@ -153,7 +153,7 @@ const Hero = () => {
             </h1>
 
             <p className="mb-5 max-w-64 font-[heronew] text-blue-100">
-              Enter the new world of games<br /> The future of Decentralized games
+              Where heroes are not born… they're forged
             </p>
 
             <Button
