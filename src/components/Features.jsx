@@ -62,7 +62,7 @@ export const BentoCard = ({ src, title, description, isComingSoon }) => {
         src={src}
         className="absolute left-0 top-0 size-full object-cover object-center"
       />
-      <div className="relative z-10 flex size-full flex-col justify-between p-5 text-black">
+      <div className="relative z-10 flex size-full flex-col justify-between p-5 text-lime-700">
         <div>
           <h1 className="bento-title special-font">{title}</h1>
           {description && (
@@ -151,7 +151,7 @@ const Features = () => (
         </BentoTilt>
 
         <BentoTilt className="bento-tilt_2">
-          <div className="flex size-full flex-col justify-between bg-indigo-700 p-5">
+          <div className="flex size-full flex-col justify-between bg-lime-700 p-5">
             <h1 className="bento-title special-font max-w-64 text-black font-heronew">
               Epic Trials & Seasonal Conquests
             </h1>

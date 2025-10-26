@@ -50,23 +50,23 @@ const Hero = () => {
           <source src="https://7x8dq6l6vi.ufs.sh/f/UDe9UzBAkSRdQaDTcWHdmSpbFZWUV9zxBkqTw1RJfGIor0gs" type="video/mp4" />
         </video>
 
-        <h1 className="font-[heronew]  sm:text-3xl md:text-5xl lg:text-7xl absolute bottom-10 right-10 z-40 text-blue-75">
-          Arena
+        <h1 className="font-[heronew] text-5xl sm:text-5xl md:text-6xl lg:text-7xl absolute bottom-10 right-10 z-40 text-white">
+         Legends Arena
         </h1>
 
         <div className="absolute left-0 top-10 z-40 size-full">
           <div className="mt-24 px-5 sm:px-10">
-            <h1 className="font-[heronew] text-white  sm:text-3xl md:text-5xl lg:text-7xl  tracking-tighter font-bold">
-              Legends
+            <h1 className="font-[heronew] text-black text-5xl sm:text-5xl md:text-6xl lg:text-7xl tracking-tighter font-bold">
+              Leap of Faith
             </h1>
 
-            <p className="mb-5 max-w-64 font-[heronew] text-blue-100">
+            <p className="mb-5 max-w-64 font-[heronew] text-black text-xl sm:text-2xl md:text-3xl">
               Where heroes are not born… they're forged
             </p>
 
             <Button
               id="Register"
-              title="Register Now"
+              title="Coming Soon"
               leftIcon={<TiLocationArrow />}
               containerClass="bg- flex-center gap-1"
             />
@@ -74,8 +74,8 @@ const Hero = () => {
         </div>
       </div>
 
-      <h1 className="font-[heronew] sm:text-3xl md:text-5xl lg:text-7xl absolute bottom-10 right-10 text-black">
-        Arena
+      <h1 className="font-[heronew] text-5xl sm:text-5xl md:text-6xl lg:text-7xl absolute bottom-10 right-10 text-black">
+       Legends Arena
       </h1>
     </div>
   );

@@ -1,30 +1,23 @@
-import { FaDiscord, FaTwitter, FaYoutube, FaMedium } from "react-icons/fa";
-import { FaApple } from "react-icons/fa";
+import {FaTwitter } from "react-icons/fa";
 
 const socialLinks = [
-  { href: "https://discord.com", icon: <FaDiscord /> },
-  { href: "https://twitter.com", icon: <FaTwitter /> },
-  { href: "https://youtube.com", icon: <FaYoutube /> }
+  { href: "https://x.com/LegendsArenaxyz", icon: <FaTwitter /> }
 ];
 
 const Footer = () => {
   return (
     <footer className="relative w-screen bg-[#dfdff0] py-24 overflow-hidden">
-      <div className="container mx-auto flex flex-col items-center gap-8 px-4">
-        {/* Centered App Store button */}
-        <div className="mt-4">
+      <div className="container mx-auto flex flex-col items-center gap-8 px-4 mb-20">
+        {/* Coming Soon button and Twitter icon side by side */}
+        <div className="flex items-center gap-4 mt-4">
           <a
             href="#"
             className="inline-flex items-center gap-3 bg-[#1f1b1b] text-white px-6 py-3 rounded-2xl shadow-[0_30px_50px_rgba(0,0,0,0.18)]"
           >
-            <FaApple className="text-xl" />
-            <span className="font-medium">Mac App Store</span>
+            <span className="font-medium">Coming Soon</span>
           </a>
-        </div>
-
-        {/* Small rounded icon buttons */}
-        <div className="flex items-center gap-4">
-          {socialLinks.slice(0, 3).map((link, index) => (
+          
+          {socialLinks.map((link, index) => (
             <a
               key={index}
               href={link.href}
@@ -38,10 +31,7 @@ const Footer = () => {
           ))}
         </div>
 
-        {/* Small policy link */}
-        <a href="#privacy-policy" className="text-sm font-light text-gray-700 hover:underline">
-          Privacy Policy
-        </a>
+      
       </div>
 
       {/* Huge faint watermark text in the background */}

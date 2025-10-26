@@ -87,10 +87,10 @@ const Roadmap = () => {
         {/* Timeline Container */}
         <div className="relative">
           {/* Horizontal timeline line - lime/yellow theme */}
-          <div className="absolute top-[120px] left-0 right-0 h-1 bg-gradient-to-r from-lime-900/30 via-lime-500/60 to-lime-900/30 shadow-[0_0_10px_rgba(163,230,53,0.3)]" />
+          <div className="absolute top-[60px] left-0 right-0 h-1 bg-gradient-to-r from-lime-900/30 via-lime-500/60 to-lime-900/30 shadow-[0_0_10px_rgba(163,230,53,0.3)] z-10" />
 
           {/* Timeline Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-2 relative">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-2 relative z-0">
             {roadmapData.map((period, periodIndex) => (
               <div key={periodIndex} className="relative">
                 {/* Period Label */}
@@ -106,7 +106,7 @@ const Roadmap = () => {
                 </div>
 
                 {/* Updates Cards */}
-                <div className="space-y-4 mt-16">
+                <div className="space-y-4 mt-20">
                   {period.updates.map((update, updateIndex) => (
                     <div
                       key={updateIndex}

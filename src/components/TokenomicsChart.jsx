@@ -8,10 +8,11 @@ const TokenomicsChart = () => {
   const chartRef = useRef(null);
 
   const tokenomicsData = [
-    { label: "Airdrop & Community", value: 20, color: "#4a5f3a", amount: "2,000,000,000" },
-    { label: "Treasury", value: 15, color: "#628a4d", amount: "1,500,000,000" },
-    { label: "Public Sale", value: 15, color: "#7ba05f", amount: "1,500,000,000" },
-    { label: "Liquidity Fund", value: 15, color: "#9caf88", amount: "1,500,000,000" },
+    { label: "Ecosystem Rewards", value: 20, color: "#4a5f3a", amount: "2,000,000,000" },
+    { label: "Airdrop & Community", value: 20, color: "#5d7547", amount: "2,000,000,000" },
+    { label: "Treasury", value: 15, color: "#7ba05f", amount: "1,500,000,000" },
+    { label: "Public Sale", value: 15, color: "#9caf88", amount: "1,500,000,000" },
+    { label: "Liquidity Fund", value: 15, color: "#adbf92", amount: "1,500,000,000" },
     { label: "Team & Advisors", value: 10, color: "#b8c947", amount: "1,000,000,000" },
     { label: "Marketing", value: 5, color: "#cddc39", amount: "500,000,000" },
   ];
@@ -169,7 +170,7 @@ const TokenomicsChart = () => {
         <div ref={chartRef} className="flex justify-center items-center">
           <div className="relative">
             <svg
-              width="800"
+              width="900"
               height="600"
               viewBox="0 0 500 500"
               className="max-w-full h-auto"
@@ -243,7 +244,7 @@ const TokenomicsChart = () => {
             <h3 className="text-xl font-heronew text-lime-300 mb-2">
               Distribution
             </h3>
-            <p className="text-3xl font-bold text-white">6 Categories</p>
+            <p className="text-3xl font-bold text-white">7 Categories</p>
             <p className="text-stone-400 text-sm mt-2">Fair allocation</p>
           </div>
 
@@ -251,8 +252,8 @@ const TokenomicsChart = () => {
             <h3 className="text-xl font-heronew text-lime-300 mb-2">
               Community First
             </h3>
-            <p className="text-3xl font-bold text-white">35%</p>
-            <p className="text-stone-400 text-sm mt-2">Airdrop + Public Sale</p>
+            <p className="text-3xl font-bold text-white">55%</p>
+            <p className="text-stone-400 text-sm mt-2">Ecosystem + Airdrop + Public Sale</p>
           </div>
         </div>
       </div>
