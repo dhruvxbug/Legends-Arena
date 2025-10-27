@@ -116,13 +116,13 @@ export const BentoCard = ({ src, title, description, isComingSoon }) => {
 };
 
 const Features = () => (
-  <section className="bg-black pb-52">
+  <section className="bg-black pb-20 md:pb-52">
     <div className="container mx-auto px-3 md:px-10">
-      <div className="px-5 py-32">
+      <div className="px-5 py-16 md:py-32">
         <p className="font-heronew text-2xl md:text-3xl text-blue-50">
           Discover the Arsenal
         </p>
-        <p className="max-w-md text-xl md:text-xl text-blue-50 opacity-50 font-heronew">
+        <p className="max-w-md text-base md:text-xl text-blue-50 opacity-50 font-heronew">
           Step into the realm where stories are not told… they're forged into
           legends. Seek ancient relics, command elemental powers, and forge your
           path to glory.
@@ -130,8 +130,8 @@ const Features = () => (
       </div>
 
 
-      <div className="grid h-[135vh] w-full grid-cols-2 grid-rows-3 gap-7">
-        <BentoTilt className="bento-tilt_1 row-span-1 md:col-span-1 md:row-span-2">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-7 auto-rows-fr md:h-[135vh]">
+        <BentoTilt className="bento-tilt_1 min-h-[300px] md:row-span-2">
           <BentoCard
             src="https://7x8dq6l6vi.ufs.sh/f/UDe9UzBAkSRdlo92eN8EQmyWFZje5ulIkS8MpY7N1LOBcVA9"
             title={
@@ -144,7 +144,7 @@ const Features = () => (
           />
         </BentoTilt>
 
-        <BentoTilt className="bento-tilt_1 row-span-1 ms-32 md:col-span-1 md:ms-0">
+        <BentoTilt className="bento-tilt_1 min-h-[300px]">
           <BentoCard
             src="https://7x8dq6l6vi.ufs.sh/f/UDe9UzBAkSRdkjWN4uamh8S3FjJu9tAiNDnZRGbIpf5Bvqxc"
             title={
@@ -157,7 +157,7 @@ const Features = () => (
           />
         </BentoTilt>
 
-        <BentoTilt className="bento-tilt_1 me-14 md:col-span-1 md:me-0">
+        <BentoTilt className="bento-tilt_1 min-h-[300px]">
           <BentoCard
             src="https://7x8dq6l6vi.ufs.sh/f/UDe9UzBAkSRdhhsCCoyY2HLJalh0IjKFN9wg4fERn6xueCpm"
             title={
@@ -170,7 +170,7 @@ const Features = () => (
           />
         </BentoTilt>
 
-        <BentoTilt className="bento-tilt_2">
+        <BentoTilt className="bento-tilt_2 min-h-[300px]">
           <div className="flex size-full flex-col justify-between bg-lime-700 p-5">
             <h1 className="bento-title special-font max-w-64 text-black font-heronew">
               Epic Trials & Seasonal Conquests
@@ -180,7 +180,7 @@ const Features = () => (
           </div>
         </BentoTilt>
 
-        <BentoTilt className="bento-tilt_2">
+        <BentoTilt className="bento-tilt_2 min-h-[300px]">
           <img
             src="https://7x8dq6l6vi.ufs.sh/f/UDe9UzBAkSRdazVeNOT7JdeKXxnoGrWElzvOugYU8w41D07Q"
             className="size-full object-cover object-center"
