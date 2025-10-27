@@ -59,7 +59,7 @@ const roadmapData = [
 
 const Roadmap = () => {
   return (
-    <section className="relative w-screen bg-black py-20 overflow-hidden">
+    <section className="relative w-screen bg-black py-10 md:py-20 overflow-hidden">
       {/* Full-bleed background video (only background) */}
       <vid
         src="https://7x8dq6l6vi.ufs.sh/f/UDe9UzBAkSRdadDjrX7JdeKXxnoGrWElzvOugYU8w41D07Q9"
@@ -68,51 +68,49 @@ const Roadmap = () => {
       
       {/* Background effects - lime theme */}
       <div className="absolute inset-0 bg-gradient-to-b from-black via-stone-900/20 to-black pointer-events-none" />
-      <div className="absolute top-1/4 -left-20 w-96 h-96 bg-lime-900/10 rounded-full blur-3xl" />
-      <div className="absolute bottom-1/4 -right-20 w-96 h-96 bg-yellow-900/10 rounded-full blur-3xl" />
 
       <div className="container mx-auto px-4 md:px-10 relative z-10">
         {/* Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-5xl md:text-7xl font-heronew mb-6 bg-gradient-to-r from-lime-200 via-yellow-400 to-lime-200 bg-clip-text text-transparent">
+        <div className="text-center mb-8 md:mb-16">
+          <h2 className="text-4xl md:text-7xl font-heronew mb-4 md:mb-6 bg-gradient-to-r from-lime-200 via-yellow-400 to-lime-200 bg-clip-text text-transparent">
             Roadmap
           </h2>
-          <div className="flex items-center justify-center gap-4 mt-6">
-            <div className="h-0.5 w-16 bg-gradient-to-r from-transparent via-lime-500 to-lime-500" />
-            <div className="text-lime-400 text-2xl">⚔</div>
-            <div className="h-0.5 w-16 bg-gradient-to-l from-transparent via-lime-500 to-lime-500" />
+          <div className="flex items-center justify-center gap-4 mt-4 md:mt-6">
+            <div className="h-0.5 w-8 md:w-16 bg-gradient-to-r from-transparent via-lime-500 to-lime-500" />
+            <div className="text-lime-400 text-xl md:text-2xl">⚔</div>
+            <div className="h-0.5 w-8 md:w-16 bg-gradient-to-l from-transparent via-lime-500 to-lime-500" />
           </div>
         </div>
 
         {/* Timeline Container */}
         <div className="relative">
-          {/* Horizontal timeline line - lime/yellow theme */}
-          <div className="absolute top-[60px] left-0 right-0 h-1 bg-gradient-to-r from-lime-900/30 via-lime-500/60 to-lime-900/30 shadow-[0_0_10px_rgba(163,230,53,0.3)] z-10" />
+          {/* Horizontal timeline line - lime/yellow theme - hidden on mobile */}
+          <div className="hidden md:block absolute top-[60px] left-0 right-0 h-1 bg-gradient-to-r from-lime-900/30 via-lime-500/60 to-lime-900/30 shadow-[0_0_10px_rgba(163,230,53,0.3)] z-10" />
 
           {/* Timeline Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-2 relative z-0">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-6 md:gap-2 relative z-0">
             {roadmapData.map((period, periodIndex) => (
               <div key={periodIndex} className="relative">
                 {/* Period Label */}
-                <div className="text-center mb-8">
+                <div className="text-center mb-4 md:mb-8">
                   <div className="relative inline-block">
-                    {/* Timeline dot - lime theme */}
-                    <div className="absolute top-[52px] left-1/2 transform -translate-x-1/2 w-5 h-5 rounded-full bg-lime-500 border-4 border-black z-20 shadow-[0_0_15px_rgba(163,230,53,0.5)]" />
+                    {/* Timeline dot - lime theme - hidden on mobile */}
+                    <div className="hidden md:block absolute top-[52px] left-1/2 transform -translate-x-1/2 w-5 h-5 rounded-full bg-lime-500 border-4 border-black z-20 shadow-[0_0_15px_rgba(163,230,53,0.5)]" />
                     
-                    <h3 className="font-heronew text-xl md:text-2xl text-lime-200/90 mb-2 relative z-10 drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
+                    <h3 className="font-heronew text-2xl md:text-2xl text-lime-200/90 mb-2 relative z-10 drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
                       {period.period}
                     </h3>
                   </div>
                 </div>
 
                 {/* Updates Cards */}
-                <div className="space-y-4 mt-20">
+                <div className="space-y-4 mt-4 md:mt-20">
                   {period.updates.map((update, updateIndex) => (
                     <div
                       key={updateIndex}
                       className={`
-                        relative rounded-lg p-4 border-2 backdrop-blur-sm
-                        transition-all duration-300 hover:scale-105 hover:shadow-2xl
+                        relative rounded-lg p-4 md:p-4 border-2 backdrop-blur-sm
+                        transition-all duration-300 md:hover:scale-105 hover:shadow-2xl
                         shadow-[inset_0_1px_0_rgba(255,255,255,0.1)]
                         ${
                           update.highlight
@@ -122,7 +120,7 @@ const Roadmap = () => {
                       `}
                     >
                       {/* Update Title */}
-                      <h4 className={`font-heronew text-lg md:text-xl mb-3 drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)] ${
+                      <h4 className={`font-heronew text-base md:text-xl mb-3 drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)] ${
                         update.highlight ? 'text-lime-300' : 'text-stone-100'
                       }`}>
                         {update.title}
@@ -133,7 +131,7 @@ const Roadmap = () => {
                         {update.features.map((feature, featureIndex) => (
                           <li
                             key={featureIndex}
-                            className="font-heronew text-sm text-stone-200/90 flex items-start"
+                            className="font-heronew text-xs md:text-sm text-stone-200/90 flex items-start"
                           >
                             <span className="text-lime-500 mr-2">•</span>
                             <span>{feature}</span>

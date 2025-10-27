@@ -27,7 +27,7 @@ const Contact = () => {
           </p>
 
           <AnimatedTitle
-            title="Join the Legend!"
+            title="Join  the  Legends"
             className="special-font !md:text-[6.2rem] w-full font-heronew !text-5xl !font-black !leading-[.9]"
           />
 

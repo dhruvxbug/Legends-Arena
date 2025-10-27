@@ -55,7 +55,7 @@ const FloatingImage = () => {
 
         <div className="relative ">
           <AnimatedTitle
-            title="Tales of the <br /> Fallen Kin<b>g</b>doms"
+            title="Tales  of the<br />Fallen  Kingdom"
             containerClass="mt-5 pointer-events-none mix-blend-difference relative z-10"
           />
 

@@ -84,7 +84,7 @@ export const BentoCard = ({ src, title, description, isComingSoon }) => {
           <div className="text-left relative z-10">
             <h1 className="bento-title special-font text-yellow-500 mb-4 drop-shadow-sm" style={{textShadow: '1px 1px 2px rgba(0, 0, 0, 0.5)'}}>{title}</h1>
             {description && (
-              <p className="text-xs md:text-sm font-[heronew] text-lime-300 leading-relaxed">{description}</p>
+              <p className="text-lg md:text-xl font-[heronew] text-lime-300 leading-relaxed">{description}</p>
             )}
           </div>
 
@@ -123,9 +123,9 @@ const Features = () => (
           Discover the Arsenal
         </p>
         <p className="max-w-md text-base md:text-xl text-blue-50 opacity-50 font-heronew">
-          Step into the realm where stories are not told… they're forged into
-          legends. Seek ancient relics, command elemental powers, and forge your
-          path to glory.
+          Wield relics of legend to tip the scales of battle.
+Where elemental forces shape every fight, no duel repeats.
+Only the cunning rise  strategy conquers strength.
         </p>
       </div>
 
@@ -133,10 +133,10 @@ const Features = () => (
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-7 auto-rows-fr md:h-[135vh]">
         <BentoTilt className="bento-tilt_1 min-h-[300px] md:row-span-2">
           <BentoCard
-            src="https://7x8dq6l6vi.ufs.sh/f/UDe9UzBAkSRdlo92eN8EQmyWFZje5ulIkS8MpY7N1LOBcVA9"
+            src="https://7x8dq6l6vi.ufs.sh/f/UDe9UzBAkSRdrUp9HcTcHBzXJfg9Y5MeV8srwiKqRLZ4uomj"
             title={
               <>
-                <h2 className="text-xl md:text-2xl font-heronew">Relics of Power</h2>
+                <h2 className="text-2xl md:text-3xl font-heronew">Relics of Power</h2>
               </>
             }
             description="Discover a vast collection of ancient relics — each tied to the elements. Seek, collect, and equip the relic that best amplifies your favorite legend's strength."
@@ -149,7 +149,7 @@ const Features = () => (
             src="https://7x8dq6l6vi.ufs.sh/f/UDe9UzBAkSRdkjWN4uamh8S3FjJu9tAiNDnZRGbIpf5Bvqxc"
             title={
               <>
-                <h2 className="text-xl md:text-2xl font-heronew">Forging System</h2>
+                <h2 className="text-2xl md:text-3xl font-heronew">Forging System</h2>
               </>
             }
             description="Combine duplicates to forge stronger versions of your relics. Higher rank relics unleash hidden powers that can turn the tide of battle."
@@ -162,7 +162,7 @@ const Features = () => (
             src="https://7x8dq6l6vi.ufs.sh/f/UDe9UzBAkSRdhhsCCoyY2HLJalh0IjKFN9wg4fERn6xueCpm"
             title={
               <>
-                <h2 className="text-xl md:text-2xl font-heronew">Elemental Alignment</h2>
+                <h2 className="text-2xl md:text-3xl font-heronew">Elemental Alignment</h2>
               </>
             }
             description="Every element holds a unique power. Choose your alignment wisely — the right match can mean victory against even the mightiest foe."
@@ -172,7 +172,7 @@ const Features = () => (
 
         <BentoTilt className="bento-tilt_2 min-h-[300px]">
           <div className="flex size-full flex-col justify-between bg-lime-700 p-5">
-            <h1 className="bento-title special-font max-w-64 text-black font-heronew">
+            <h1 className="bento-title special-font max-w-64  text-2xl text-black font-heronew">
               Epic Trials & Seasonal Conquests
             </h1>
 

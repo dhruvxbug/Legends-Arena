@@ -29,18 +29,18 @@ const About = () => {
   return (
     <div id="about" className="min-h-screen w-screen">
       <div className="relative mb-8 mt-36 flex flex-col items-center gap-5">
-        <p className="font-heronew text-sm uppercase md:text-[10px]">
+        <p className="font-heronew text-lg uppercase md:text-[10px]">
           Step into the realm
         </p>
 
         <AnimatedTitle
-          title="Where Legends <br /> Are Forged"
+          title="Where  Legends <br /> Are  Made"
           containerClass="mt-5 !text-black text-center "
         />
 
         <div className="about-subtext font-heronew">
           <p>Forge legendary heroes, master elemental synergies, </p>
-          <p className="text-gray-500 ">
+          <p className="text-gray-500">
             and build the ultimate backpack arsenal in this addictive auto battler where every placement matters and every victory brings you closer to immortal glory and your very own NFTs
           </p>
         </div>
@@ -48,8 +48,11 @@ const About = () => {
 
       <div className="h-dvh w-screen" id="clip">
         <div className="mask-clip-path about-image">
-          <img
-            src="img/image.png"
+          <video
+            src="https://7x8dq6l6vi.ufs.sh/f/UDe9UzBAkSRdSfDjaETeH3vKEAncj6FBxw4uk9XLCUqh5stZ"
+            loop 
+            autoPlay
+            muted
             className="absolute left-0 top-0 size-full object-cover"
             aria-label="About background video"
           />
