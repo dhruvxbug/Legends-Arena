@@ -66,7 +66,7 @@ export const BentoCard = ({ src, title, description, isComingSoon }) => {
 
   return (
     <div 
-      className="relative text-black size-full group"
+      className="relative text-black border-rounded size-full group"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
@@ -76,32 +76,43 @@ export const BentoCard = ({ src, title, description, isComingSoon }) => {
       />
       
       {/* Green overlay with text - shown on hover */}
-      <div className={`absolute inset-0 bg-lime-700/95 transition-opacity duration-300 z-10 flex flex-col justify-between p-5 ${isHovering ? 'opacity-100' : 'opacity-0'}`}>
-        <div>
-          <h1 className="bento-title special-font text-black">{title}</h1>
-          {description && (
-            <p className="mt-3 max-w-64 text-xs md:text-base font-general text-black">{description}</p>
+      <div className={`absolute inset-0 bg-lime-700 transition-opacity duration-300 z-10 flex flex-col items-center justify-center p-5 ${isHovering ? 'opacity-100' : 'opacity-0'}`}>
+        {/* Decorative Frame */}
+        <div className="relative border-4 border-black rounded-lg p-6 max-w-md">
+          {/* Corner decorations */}
+          <div className="absolute top-0 left-0 w-6 h-6 border-t-4 border-l-4 border-white -mt-1 -ml-1"></div>
+          <div className="absolute top-0 right-0 w-6 h-6 border-t-4 border-r-4 border-white -mt-1 -mr-1"></div>
+          <div className="absolute bottom-0 left-0 w-6 h-6 border-b-4 border-l-4 border-white -mb-1 -ml-1"></div>
+          <div className="absolute bottom-0 right-0 w-6 h-6 border-b-4 border-r-4 border-white -mb-1 -mr-1"></div>
+          
+          <div className="text-center">
+            <h1 className="bento-title special-font text-black mb-4">{title}</h1>
+            {description && (
+              <p className="text-xs md:text-base font-general text-black">{description}</p>
+            )}
+          </div>
+
+          {isComingSoon && (
+            <div className="flex justify-center mt-6">
+              <div
+                ref={hoverButtonRef}
+                onMouseMove={handleMouseMove}
+                className="border-hsla relative flex w-fit cursor-pointer items-center gap-1 overflow-hidden rounded-full bg-black px-5 py-2 text-xs uppercase text-white border-2 border-white"
+              >
+                {/* Radial gradient hover effect */}
+                <div
+                  className="pointer-events-none absolute -inset-px opacity-0 transition duration-300"
+                  style={{
+                    opacity: hoverOpacity,
+                    background: `radial-gradient(100px circle at ${cursorPosition.x}px ${cursorPosition.y}px, #656fe288, #00000026)`,
+                  }}
+                />
+                <TiLocationArrow className="relative z-20" />
+                <p className="relative z-20">coming soon</p>
+              </div>
+            </div>
           )}
         </div>
-
-        {isComingSoon && (
-          <div
-            ref={hoverButtonRef}
-            onMouseMove={handleMouseMove}
-            className="border-hsla relative flex w-fit cursor-pointer items-center gap-1 overflow-hidden rounded-full bg-black px-5 py-2 text-xs uppercase text-white border-2 border-white"
-          >
-            {/* Radial gradient hover effect */}
-            <div
-              className="pointer-events-none absolute -inset-px opacity-0 transition duration-300"
-              style={{
-                opacity: hoverOpacity,
-                background: `radial-gradient(100px circle at ${cursorPosition.x}px ${cursorPosition.y}px, #656fe288, #00000026)`,
-              }}
-            />
-            <TiLocationArrow className="relative z-20" />
-            <p className="relative z-20">coming soon</p>
-          </div>
-        )}
       </div>
     </div>
   );
