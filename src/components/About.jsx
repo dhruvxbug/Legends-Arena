@@ -51,7 +51,7 @@ const About = () => {
       <div className="h-dvh w-screen" id="clip">
         <div className="mask-clip-path about-image">
           <img
-            src="https://7x8dq6l6vi.ufs.sh/f/UDe9UzBAkSRdoTFJ7bHdxocqsFzLAmRE270inyMDTuVrW541"
+            src="img/image.png"
             className="absolute left-0 top-0 size-full object-cover"
             aria-label="About background video"
           />

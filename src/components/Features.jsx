@@ -75,36 +75,33 @@ export const BentoCard = ({ src, title, description, isComingSoon }) => {
         className="absolute left-0 top-0 size-full object-cover object-center"
       />
       
-      {/* Green overlay with text - shown on hover */}
-      <div className={`absolute inset-0 bg-lime-700 transition-opacity duration-300 z-10 flex flex-col items-center justify-center p-5 ${isHovering ? 'opacity-100' : 'opacity-0'}`}>
-        {/* Decorative Frame */}
-        <div className="relative border-4 border-black rounded-lg p-6 max-w-md">
-          {/* Corner decorations */}
-          <div className="absolute top-0 left-0 w-6 h-6 border-t-4 border-l-4 border-white -mt-1 -ml-1"></div>
-          <div className="absolute top-0 right-0 w-6 h-6 border-t-4 border-r-4 border-white -mt-1 -mr-1"></div>
-          <div className="absolute bottom-0 left-0 w-6 h-6 border-b-4 border-l-4 border-white -mb-1 -ml-1"></div>
-          <div className="absolute bottom-0 right-0 w-6 h-6 border-b-4 border-r-4 border-white -mb-1 -mr-1"></div>
+      {/* Gradient overlay - shown on hover */}
+      <div className={`absolute inset-0 bg-gradient-to-r from-black to-transparent transition-opacity duration-300 z-10 flex flex-col justify-between p-8 ${isHovering ? 'opacity-100' : 'opacity-0'}`}>
+        {/* Content Container - Left side only (50% width) */}
+        <div className="relative w-1/2 h-full flex flex-col justify-between">
           
-          <div className="text-center">
-            <h1 className="bento-title special-font text-black mb-4">{title}</h1>
+          {/* Content - Top Left */}
+          <div className="text-left relative z-10">
+            <h1 className="bento-title special-font text-yellow-500 mb-4 drop-shadow-sm" style={{textShadow: '1px 1px 2px rgba(0, 0, 0, 0.5)'}}>{title}</h1>
             {description && (
-              <p className="text-xs md:text-base font-general text-black">{description}</p>
+              <p className="text-xs md:text-sm font-[heronew] text-lime-300 leading-relaxed">{description}</p>
             )}
           </div>
 
+          {/* Coming Soon Button - Bottom Left */}
           {isComingSoon && (
-            <div className="flex justify-center mt-6">
+            <div className="flex justify-start relative z-10">
               <div
                 ref={hoverButtonRef}
                 onMouseMove={handleMouseMove}
-                className="border-hsla relative flex w-fit cursor-pointer items-center gap-1 overflow-hidden rounded-full bg-black px-5 py-2 text-xs uppercase text-white border-2 border-white"
+                className="border-hsla relative flex w-fit cursor-pointer items-center gap-1 overflow-hidden rounded-full bg-lime-700 px-5 py-2 text-xs uppercase text-lime-300 border-2 border-lime-300 shadow-md"
               >
                 {/* Radial gradient hover effect */}
                 <div
                   className="pointer-events-none absolute -inset-px opacity-0 transition duration-300"
                   style={{
                     opacity: hoverOpacity,
-                    background: `radial-gradient(100px circle at ${cursorPosition.x}px ${cursorPosition.y}px, #656fe288, #00000026)`,
+                    background: `radial-gradient(100px circle at ${cursorPosition.x}px ${cursorPosition.y}px, #eed32488, #00000026)`,
                   }}
                 />
                 <TiLocationArrow className="relative z-20" />
@@ -139,7 +136,7 @@ const Features = () => (
             src="https://7x8dq6l6vi.ufs.sh/f/UDe9UzBAkSRdlo92eN8EQmyWFZje5ulIkS8MpY7N1LOBcVA9"
             title={
               <>
-                <h2 className="text-xl text-black md:text-2xl font-heronew">Relic Vault</h2>
+                <h2 className="text-xl md:text-2xl font-heronew">Relic Vault</h2>
               </>
             }
             description="Discover a vast collection of ancient relics — each tied to the elements. Seek, collect, and equip the relic that best amplifies your legend's strength."

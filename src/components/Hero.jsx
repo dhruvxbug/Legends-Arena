@@ -32,22 +32,15 @@ const Hero = () => {
         id="video-frame"
         className="relative z-10 h-dvh w-screen overflow-hidden rounded-lg bg-blue-75"
       >
-        {/* Background Image */}
-        <img
-          src="https://7x8dq6l6vi.ufs.sh/f/UDe9UzBAkSRdQaDTcWHdmSpbFZWUV9zxBkqTw1RJfGIor0gs"
-          alt="Hero background"
-          className="absolute left-0 top-0 size-full object-cover object-center"
-        />
-
-        {/* Overlay Video */}
+        {/* Video Only */}
         <video
           autoPlay
           loop
           muted
           playsInline
-          className="absolute left-0 top-0 size-full object-cover object-center mix-blend-overlay opacity-50"
+          className="absolute left-0 top-0 size-full object-cover object-center"
         >
-          <source src="https://7x8dq6l6vi.ufs.sh/f/UDe9UzBAkSRdeEIwSUuhYvpDngIk5B8tiqceWQuOmNPdwRlH" type="video/mp4" />
+          <source src="https://7x8dq6l6vi.ufs.sh/f/UDe9UzBAkSRdXd3BSQOhVqS8IFf5HxPGWo4hivsCljAg3Zak" type="video/mp4" />
         </video>
 
         <h1 className="font-[heronew] text-5xl sm:text-5xl md:text-6xl lg:text-7xl absolute bottom-10 right-10 z-40 text-white">
@@ -57,11 +50,11 @@ const Hero = () => {
         <div className="absolute left-0 top-10 z-40 size-full">
           <div className="mt-24 px-5 sm:px-10">
             <h1 className="font-[heronew] text-black text-5xl sm:text-5xl md:text-6xl lg:text-7xl tracking-tighter font-bold">
-              Leap of Faith
+              Join the Legends
             </h1>
 
             <p className="mb-5 max-w-64 font-[heronew] text-black text-xl sm:text-2xl md:text-3xl">
-              Where heroes are not born… they're forged
+              Plan your moves, dominate the arena, and forge your own destiny.
             </p>
 
             <Button
