@@ -122,7 +122,7 @@ const Features = () => (
         <p className="font-heronew text-2xl md:text-3xl text-blue-50">
           Discover the Arsenal
         </p>
-        <p className="max-w-md text-xl md:text-xl text-blue-50 opacity-50 font-general">
+        <p className="max-w-md text-xl md:text-xl text-blue-50 opacity-50 font-heronew">
           Step into the realm where stories are not told… they're forged into
           legends. Seek ancient relics, command elemental powers, and forge your
           path to glory.
@@ -136,10 +136,10 @@ const Features = () => (
             src="https://7x8dq6l6vi.ufs.sh/f/UDe9UzBAkSRdlo92eN8EQmyWFZje5ulIkS8MpY7N1LOBcVA9"
             title={
               <>
-                <h2 className="text-xl md:text-2xl font-heronew">Relic Vault</h2>
+                <h2 className="text-xl md:text-2xl font-heronew">Relics of Power</h2>
               </>
             }
-            description="Discover a vast collection of ancient relics — each tied to the elements. Seek, collect, and equip the relic that best amplifies your legend's strength."
+            description="Discover a vast collection of ancient relics — each tied to the elements. Seek, collect, and equip the relic that best amplifies your favorite legend's strength."
             isComingSoon
           />
         </BentoTilt>
@@ -149,10 +149,10 @@ const Features = () => (
             src="https://7x8dq6l6vi.ufs.sh/f/UDe9UzBAkSRdkjWN4uamh8S3FjJu9tAiNDnZRGbIpf5Bvqxc"
             title={
               <>
-                <h2 className="text-xl md:text-2xl font-heronew">Elemental Affinity</h2>
+                <h2 className="text-xl md:text-2xl font-heronew">Forging System</h2>
               </>
             }
-            description="Every element holds a unique power. Choose your alignment wisely — the right match can mean victory against even the mightiest foe."
+            description="Combine duplicates to forge stronger versions of your relics. Higher rank relics unleash hidden powers that can turn the tide of battle."
             isComingSoon
           />
         </BentoTilt>
@@ -162,10 +162,10 @@ const Features = () => (
             src="https://7x8dq6l6vi.ufs.sh/f/UDe9UzBAkSRdhhsCCoyY2HLJalh0IjKFN9wg4fERn6xueCpm"
             title={
               <>
-                <h2 className="text-xl md:text-2xl font-heronew">Battle Oracle</h2>
+                <h2 className="text-xl md:text-2xl font-heronew">Elemental Alignment</h2>
               </>
             }
-            description="An ancient guide forged in wisdom — reveals opponent weaknesses, suggests strategic builds, and whispers secrets of victory before each clash."
+            description="Every element holds a unique power. Choose your alignment wisely — the right match can mean victory against even the mightiest foe."
             isComingSoon
           />
         </BentoTilt>

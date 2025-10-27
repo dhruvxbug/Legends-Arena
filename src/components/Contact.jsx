@@ -22,13 +22,13 @@ const Contact = () => {
         <div className="absolute inset-0 bg-black/10"></div>
 
         <div className="relative z-10 flex flex-col items-center text-center">
-          <p className="mb-10 font-general text-[10px] uppercase">
+          <p className="mb-10 font-heronew text-[10px] uppercase">
             Answer the call
           </p>
 
           <AnimatedTitle
             title="Join the Legend!"
-            className="special-font !md:text-[6.2rem] w-full font-legends !text-5xl !font-black !leading-[.9]"
+            className="special-font !md:text-[6.2rem] w-full font-heronew !text-5xl !font-black !leading-[.9]"
           />
 
           <Button title="Begin your journey" containerClass="mt-10 cursor-pointer" />

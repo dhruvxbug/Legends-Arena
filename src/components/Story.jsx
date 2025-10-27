@@ -49,7 +49,7 @@ const FloatingImage = () => {
   return (
     <div id="story" className="max-h-200px w-screen bg-black text-blue-50">
       <div className="flex  flex-col items-center py-10 ">
-        <p className="font-general text-sm uppercase md:text-[10px]">
+        <p className="font-heronew text-sm uppercase md:text-[10px]">
           Beyond the veil
         </p>
 

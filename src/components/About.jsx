@@ -29,7 +29,7 @@ const About = () => {
   return (
     <div id="about" className="min-h-screen w-screen">
       <div className="relative mb-8 mt-36 flex flex-col items-center gap-5">
-        <p className="font-general text-sm uppercase md:text-[10px]">
+        <p className="font-heronew text-sm uppercase md:text-[10px]">
           Step into the realm
         </p>
 
@@ -38,12 +38,10 @@ const About = () => {
           containerClass="mt-5 !text-black text-center "
         />
 
-        <div className="about-subtext">
-          <p>Every champion carries a story untold—yours begins now</p>
-          <p className="text-gray-500">
-            Legends Arena unites warriors across realms—where your deeds echo
-            through time, your victories shape the world, and your legacy
-            transcends the battlefield.
+        <div className="about-subtext font-heronew">
+          <p>Forge legendary heroes, master elemental synergies, </p>
+          <p className="text-gray-500 ">
+            and build the ultimate backpack arsenal in this addictive auto battler where every placement matters and every victory brings you closer to immortal glory and your very own NFTs
           </p>
         </div>
       </div>

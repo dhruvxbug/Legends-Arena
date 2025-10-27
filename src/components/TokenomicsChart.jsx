@@ -161,7 +161,7 @@ const TokenomicsChart = () => {
           <h2 className="text-5xl md:text-7xl font-heronew mb-6 bg-gradient-to-r from-lime-200 via-yellow-400 to-lime-200 bg-clip-text text-transparent">
             Tokenomics
           </h2>
-          <p className="text-stone-400 font-legends text-lg md:text-xl max-w-2xl mx-auto">
+          <p className="text-stone-400 font-heronew text-lg md:text-xl max-w-2xl mx-auto">
             Earn rewards, access exclusive events, and revolutionize your Web3 networking.
           </p>
         </div>
@@ -236,7 +236,7 @@ const TokenomicsChart = () => {
             <h3 className="text-xl font-heronew text-lime-300 mb-2">
               Total Supply
             </h3>
-            <p className="text-3xl font-bold text-white">10,000,000,000</p>
+            <p className="text-3xl font-heronew text-white">10,000,000,000</p>
             <p className="text-stone-400 text-sm mt-2">$LEGEND Tokens</p>
           </div>
 
@@ -244,7 +244,7 @@ const TokenomicsChart = () => {
             <h3 className="text-xl font-heronew text-lime-300 mb-2">
               Distribution
             </h3>
-            <p className="text-3xl font-bold text-white">7 Categories</p>
+            <p className="text-3xl font-heronew text-white">7 Categories</p>
             <p className="text-stone-400 text-sm mt-2">Fair allocation</p>
           </div>
 
@@ -252,7 +252,7 @@ const TokenomicsChart = () => {
             <h3 className="text-xl font-heronew text-lime-300 mb-2">
               Community First
             </h3>
-            <p className="text-3xl font-bold text-white">55%</p>
+            <p className="text-3xl font-heronew text-white">55%</p>
             <p className="text-stone-400 text-sm mt-2">Ecosystem + Airdrop + Public Sale</p>
           </div>
         </div>

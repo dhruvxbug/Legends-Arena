@@ -133,7 +133,7 @@ const Roadmap = () => {
                         {update.features.map((feature, featureIndex) => (
                           <li
                             key={featureIndex}
-                            className="font-legends text-sm text-stone-200/90 flex items-start"
+                            className="font-heronew text-sm text-stone-200/90 flex items-start"
                           >
                             <span className="text-lime-500 mr-2">•</span>
                             <span>{feature}</span>

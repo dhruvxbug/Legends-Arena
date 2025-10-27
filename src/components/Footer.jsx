@@ -14,7 +14,7 @@ const Footer = () => {
             href="#"
             className="inline-flex items-center gap-3 bg-[#1f1b1b] text-white px-6 py-3 rounded-2xl shadow-[0_30px_50px_rgba(0,0,0,0.18)]"
           >
-            <span className="font-medium">Coming Soon</span>
+            <span className="font-heronew">Coming Soon</span>
           </a>
           
           {socialLinks.map((link, index) => (
