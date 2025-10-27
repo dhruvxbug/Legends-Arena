@@ -10,7 +10,7 @@ import TokenomicsChart from "./components/TokenomicsChart";
 function App() {
   return (
     <main className="relative min-h-screen w-screen overflow-x-hidden">
-      {/* <NavBar /> */}
+      <NavBar />
       <Hero />
       <About />
       <Features />
