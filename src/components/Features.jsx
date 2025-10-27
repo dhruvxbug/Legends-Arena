@@ -123,9 +123,7 @@ const Features = () => (
           Discover the Arsenal
         </p>
         <p className="max-w-md text-base md:text-xl text-blue-50 opacity-50 font-heronew">
-          Wield relics of legend to tip the scales of battle.
-Where elemental forces shape every fight, no duel repeats.
-Only the cunning rise  strategy conquers strength.
+          Wield legendary relics, master elemental forces, and rise through cunning strategy.
         </p>
       </div>
 
@@ -139,7 +137,7 @@ Only the cunning rise  strategy conquers strength.
                 <h2 className="text-2xl md:text-3xl font-heronew">Relics of Power</h2>
               </>
             }
-            description="Discover a vast collection of ancient relics — each tied to the elements. Seek, collect, and equip the relic that best amplifies your favorite legend's strength."
+            description="Discover ancient relics tied to the elements. Equip them to amplify your legend's strength."
             isComingSoon
           />
         </BentoTilt>
@@ -152,7 +150,7 @@ Only the cunning rise  strategy conquers strength.
                 <h2 className="text-2xl md:text-3xl font-heronew">Forging System</h2>
               </>
             }
-            description="Combine duplicates to forge stronger versions of your relics. Higher rank relics unleash hidden powers that can turn the tide of battle."
+            description="Combine duplicates to forge stronger relics and unlock hidden powers."
             isComingSoon
           />
         </BentoTilt>
@@ -165,7 +163,7 @@ Only the cunning rise  strategy conquers strength.
                 <h2 className="text-2xl md:text-3xl font-heronew">Elemental Alignment</h2>
               </>
             }
-            description="Every element holds a unique power. Choose your alignment wisely — the right match can mean victory against even the mightiest foe."
+            description="Choose your element wisely. The right match can mean victory."
             isComingSoon
           />
         </BentoTilt>
