@@ -159,7 +159,7 @@ const Features = () => (
 
         <BentoTilt className="bento-tilt_1 me-14 md:col-span-1 md:me-0">
           <BentoCard
-            src="https://7x8dq6l6vi.ufs.sh/f/UDe9UzBAkSRdwPhNRV5OpgfdKRP0IjcAEUtQlkGe64NH2JiC"
+            src="https://7x8dq6l6vi.ufs.sh/f/UDe9UzBAkSRdhhsCCoyY2HLJalh0IjKFN9wg4fERn6xueCpm"
             title={
               <>
                 <h2 className="text-xl md:text-2xl font-heronew">Battle Oracle</h2>
