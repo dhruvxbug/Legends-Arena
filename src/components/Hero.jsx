@@ -47,7 +47,7 @@ const Hero = () => {
           playsInline
           className="absolute left-0 top-0 size-full object-cover object-center mix-blend-overlay opacity-50"
         >
-          <source src="https://7x8dq6l6vi.ufs.sh/f/UDe9UzBAkSRdQaDTcWHdmSpbFZWUV9zxBkqTw1RJfGIor0gs" type="video/mp4" />
+          <source src="https://7x8dq6l6vi.ufs.sh/f/UDe9UzBAkSRdeEIwSUuhYvpDngIk5B8tiqceWQuOmNPdwRlH" type="video/mp4" />
         </video>
 
         <h1 className="font-[heronew] text-5xl sm:text-5xl md:text-6xl lg:text-7xl absolute bottom-10 right-10 z-40 text-white">

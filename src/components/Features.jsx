@@ -88,7 +88,7 @@ export const BentoCard = ({ src, title, description, isComingSoon }) => {
           <div
             ref={hoverButtonRef}
             onMouseMove={handleMouseMove}
-            className="border-hsla relative flex w-fit cursor-pointer items-center gap-1 overflow-hidden rounded-full bg-black px-5 py-2 text-xs uppercase text-white/20"
+            className="border-hsla relative flex w-fit cursor-pointer items-center gap-1 overflow-hidden rounded-full bg-black px-5 py-2 text-xs uppercase text-white border-2 border-white"
           >
             {/* Radial gradient hover effect */}
             <div
@@ -125,7 +125,7 @@ const Features = () => (
       <div className="grid h-[135vh] w-full grid-cols-2 grid-rows-3 gap-7">
         <BentoTilt className="bento-tilt_1 row-span-1 md:col-span-1 md:row-span-2">
           <BentoCard
-            src="https://7x8dq6l6vi.ufs.sh/f/UDe9UzBAkSRdOM0Sv0giW3XVksA82oQGaDRrb6hv7ftxJFKp"
+            src="https://7x8dq6l6vi.ufs.sh/f/UDe9UzBAkSRdlo92eN8EQmyWFZje5ulIkS8MpY7N1LOBcVA9"
             title={
               <>
                 <h2 className="text-xl text-black md:text-2xl font-heronew">Relic Vault</h2>
@@ -138,7 +138,7 @@ const Features = () => (
 
         <BentoTilt className="bento-tilt_1 row-span-1 ms-32 md:col-span-1 md:ms-0">
           <BentoCard
-            src="https://7x8dq6l6vi.ufs.sh/f/UDe9UzBAkSRdxxiUbTClU75EsKFrZGDJ30vuYA2fXpw1jT8M"
+            src="https://7x8dq6l6vi.ufs.sh/f/UDe9UzBAkSRdkjWN4uamh8S3FjJu9tAiNDnZRGbIpf5Bvqxc"
             title={
               <>
                 <h2 className="text-xl md:text-2xl font-heronew">Elemental Affinity</h2>
