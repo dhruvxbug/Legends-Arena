@@ -4,7 +4,9 @@
   "version": "0.0.1",
   "type": "module",
   "scripts": {
-    "dev": "node server.js"
+    "dev": "node server.js",
+    "start": "node server.js",
+    "build": "echo \"No build step for backend; use 'npm start' to run the server\""
   },
   "dependencies": {
     "cors": "^2.8.5",
