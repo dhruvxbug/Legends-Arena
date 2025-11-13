@@ -59,9 +59,13 @@ const Hero = () => {
 
             <Button
               id="Register"
-              title="Coming Soon"
+              title="Join Waitlist"
               leftIcon={<TiLocationArrow />}
               containerClass="bg- flex-center gap-1"
+              onClick={() => {
+                const el = document.getElementById("contact");
+                if (el) el.scrollIntoView({ behavior: "smooth" });
+              }}
             />
           </div>
         </div>
