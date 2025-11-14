@@ -1,24 +1,12 @@
+'use client';
+
 import { useState } from "react";
 import AnimatedTitle from "./AnimatedTitle";
 import Button from "./Button";
+import Image from 'next/image';
 
-// Resolve API base URL with precedence so you don't need to rebuild when changing backends:
-// 1) `window.__env.VITE_API_BASE` (runtime injection)
-// 2) `<meta name="api-base" content="...">` in deployed `index.html`
-// 3) build-time `import.meta.env.VITE_API_BASE`
-// 4) fallback to the deployed Render backend so the live frontend works out-of-the-box
-const API_BASE = (() => {
-  if (typeof window !== "undefined") {
-    const runtime = window.__env && window.__env.VITE_API_BASE;
-    if (runtime) return runtime;
-    try {
-      const m = document.querySelector('meta[name="api-base"]');
-      if (m && m.content) return m.content;
-    } catch (e) {}
-  }
-
-  return import.meta.env.VITE_API_BASE ?? "https://legends-arena.onrender.com";
-})();
+// Next.js API route - always uses relative path to same-origin API
+const API_BASE = "";
 
 const Contact = () => {
   const [email, setEmail] = useState("");
@@ -35,6 +23,8 @@ const Contact = () => {
     setError("");
     setStatus("");
 
+    console.log("Submitting email:", email);
+
     if (!validateEmail(email)) {
       setError("Please enter a valid email address");
       return;
@@ -43,6 +33,8 @@ const Contact = () => {
     try {
       const base = API_BASE ? API_BASE.replace(/\/$/, "") : "";
       const url = base ? `${base}/api/waitlist` : "/api/waitlist";
+
+      console.log("Submitting to URL:", url);
 
       const res = await fetch(url, {
         method: "POST",
@@ -66,12 +58,16 @@ const Contact = () => {
   return (
     <div id="contact" className="my-20 min-h-96 w-screen px-10">
       <div className="relative rounded-lg overflow-hidden py-24 text-blue-50">
-        <img
-          src="/img/contactus.jpeg"
-          alt="Waitlist background"
-          className="absolute inset-0 w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 bg-black/20"></div>
+        <div className="absolute inset-0">
+          <Image
+            src="/img/contactus.jpeg"
+            alt="Waitlist background"
+            fill
+            className="object-cover"
+            priority={false}
+          />
+        </div>
+        <div className="absolute inset-0 bg-black/20" />
 
         <div className="relative z-10 flex flex-col items-center text-center">
           <p className="mb-6 font-heronew text-[10px] uppercase">Join the waitlist</p>
@@ -89,7 +85,7 @@ const Contact = () => {
               placeholder="you@example.com"
               className="w-full rounded-full bg-white/90 px-5 py-3 text-black placeholder-gray-500 focus:outline-none font-heronew text-xs uppercase"
             />
-            <Button title="Join Waitlist" containerClass="mt-0" />
+            <Button title="Join Waitlist" onClick={handleSubmit} containerClass="mt-0" />
             {error && <p className="font-heronew text-red-500 text-xs uppercase">{error}</p>}
             {status && <p className="font-heronew text-lime-300 text-xs uppercase">{status}</p>}
           </form>

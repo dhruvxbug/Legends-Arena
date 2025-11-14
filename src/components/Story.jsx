@@ -1,3 +1,5 @@
+'use client';
+
 import gsap from "gsap";
 import { useRef } from "react";
 import Roadmap from "./Roadmap";
@@ -60,19 +62,7 @@ const FloatingImage = () => {
           />
 
           <div className="story-img-container">
-            <div className="story-img-mask">
-              <div className="story-img-content">
-                <img
-                  ref={frameRef}
-                  onMouseMove={handleMouseMove}
-                  onMouseLeave={handleMouseLeave}
-                  onMouseUp={handleMouseLeave}
-                  onMouseEnter={handleMouseLeave}
-                  src=""
-                  className="object-contain"
-                />
-              </div>
-            </div>
+           
 
             {/* for the rounded corner */}
             <svg

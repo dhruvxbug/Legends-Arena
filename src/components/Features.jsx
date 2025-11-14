@@ -1,4 +1,7 @@
+'use client';
+
 import { useState, useRef } from "react";
+import Image from 'next/image';
 import { TiLocationArrow } from "react-icons/ti";
 
 export const BentoTilt = ({ children, className = "" }) => {
@@ -70,10 +73,14 @@ export const BentoCard = ({ src, title, description, isComingSoon }) => {
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
-      <img
-        src={src}
-        className="absolute left-0 top-0 size-full object-cover object-center"
-      />
+      <div className="absolute left-0 top-0 size-full">
+        <Image
+          src={src}
+          alt="feature image"
+          fill
+          className="object-cover object-center"
+        />
+      </div>
       
       {/* Gradient overlay - shown on hover */}
       <div className={`absolute inset-0 bg-gradient-to-r from-black to-transparent transition-opacity duration-300 z-10 flex flex-col justify-between p-8 ${isHovering ? 'opacity-100' : 'opacity-0'}`}>
@@ -179,8 +186,11 @@ const Features = () => (
         </BentoTilt>
 
         <BentoTilt className="bento-tilt_2 min-h-[300px]">
-          <img
+          <Image
             src="https://7x8dq6l6vi.ufs.sh/f/UDe9UzBAkSRdazVeNOT7JdeKXxnoGrWElzvOugYU8w41D07Q"
+            alt="Feature visual"
+            width={1200}
+            height={800}
             className="size-full object-cover object-center"
           />
         </BentoTilt>

@@ -1,8 +1,11 @@
+'use client';
+
 import clsx from "clsx";
 import gsap from "gsap";
 import { useWindowScroll } from "react-use";
 import { useEffect, useRef, useState } from "react";
 import { TiLocationArrow } from "react-icons/ti";
+import Image from 'next/image';
 
 import Button from "./Button";
 
@@ -71,7 +74,7 @@ const NavBar = () => {
         <nav className="flex size-full items-center justify-between p-4">
           {/* Logo and Product button */}
           <div className="flex items-center gap-7">
-            <img src="/img/logo.png" alt="logo" className="w-30 h-16 bg-transparent" />
+            <Image src="/img/logo.png" alt="Legends Arena" width={120} height={64} className="bg-transparent" />
           </div>
 
           {/* Navigation Links and Audio Button */}
